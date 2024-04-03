@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project Sdk="Microsoft.NET.Sdk" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NuGet">
+    <TargetFrameworks>net462;netstandard2.0</TargetFrameworks>
+    <IsPackable>true</IsPackable>
+    <PackageId>DocuSign.Maestro</PackageId>
+    <Description>The DocuSign NuGet package makes integrating DocuSign into your apps and websites a super fast and painless process. The library is open sourced on GitHub, look for the docusign-maestro-csharp-client repository.</Description>
+    <Company>DocuSign Inc.</Company>
+    <Owners>DocuSign</Owners>
+    <Copyright>Copyright © DocuSign 2024</Copyright>
+    <AssemblyTitle>DocuSign.Maestro</AssemblyTitle>
+    <Authors>DocuSign</Authors>
+    <OutputType>Library</OutputType>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DocuSign.Maestro</RootNamespace>
+    <AssemblyName>DocuSign.Maestro</AssemblyName>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <VersionPrefix>1.0.0-rc1</VersionPrefix>
+    <VersionSuffix/>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>DocuSign.Maestro;REST;Maestro;docusign;Maestro;api</PackageTags>
+    <PackageIconUrl>https://s.gravatar.com/avatar/4a8c033df6baa902f730d514d5574c33</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/docusign/docusign-csharp-client</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/docusign/docusign-csharp-client/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/docusign/docusign-csharp-client</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>[v1.0.0-rc1] - Maestro API v1.0.0-1.0.3 - 4/3/2024</PackageReleaseNotes>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net462'">
+    <DefineConstants>NET462</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0'">
+    <DefineConstants>NETSTANDARD2_0</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net462'">
+    <Reference Include="System.Web"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.5.0"/>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0"/>
+    <PackageReference Include="Microsoft.IdentityModel.Protocols" Version="5.4.0"/>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.4.0"/>
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.2.1"/>
+  </ItemGroup>
+  <ItemGroup/>
+</Project>
