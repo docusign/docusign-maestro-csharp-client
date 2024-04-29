@@ -22,68 +22,20 @@ using System.ComponentModel.DataAnnotations;
 namespace DocuSign.Maestro.Model
 {
     /// <summary>
-    /// DS Workflow Variable from a Participant
+    /// DS Workflow Variable from a Participant object. The definition is flexible based on the workflow definition.
     /// </summary>
     [DataContract]
     public partial class DSWorkflowVariableFromParticipant :  IEquatable<DSWorkflowVariableFromParticipant>, IValidatableObject
     {
-        public DSWorkflowVariableFromParticipant()
-        {
-            // Empty Constructor
-        }
 
-        /// <summary>
-        /// Gets or Sets Key
-        /// </summary>
-        [DataMember(Name="key", EmitDefaultValue=false)]
-        public ParticipantKeys? Key { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="DSWorkflowVariableFromParticipant" /> class.
         /// </summary>
-        /// <param name="Key">Key (required).</param>
-        /// <param name="ParticipantId">ParticipantId (required).</param>
-        /// <param name="Source">Source (required).</param>
-        public DSWorkflowVariableFromParticipant(ParticipantKeys? Key = default(ParticipantKeys?), string ParticipantId = default(string), DSWorkflowVariableSourceTypesParticipant Source = default(DSWorkflowVariableSourceTypesParticipant))
+        [JsonConstructorAttribute]
+        public DSWorkflowVariableFromParticipant()
         {
-            // to ensure "Key" is required (not null)
-            if (Key == null)
-            {
-                throw new InvalidDataException("Key is a required property for DSWorkflowVariableFromParticipant and cannot be null");
-            }
-            else
-            {
-                this.Key = Key;
-            }
-            // to ensure "ParticipantId" is required (not null)
-            if (ParticipantId == null)
-            {
-                throw new InvalidDataException("ParticipantId is a required property for DSWorkflowVariableFromParticipant and cannot be null");
-            }
-            else
-            {
-                this.ParticipantId = ParticipantId;
-            }
-            // to ensure "Source" is required (not null)
-            if (Source == null)
-            {
-                throw new InvalidDataException("Source is a required property for DSWorkflowVariableFromParticipant and cannot be null");
-            }
-            else
-            {
-                this.Source = Source;
-            }
         }
         
-        /// <summary>
-        /// Gets or Sets ParticipantId
-        /// </summary>
-        [DataMember(Name="participantId", EmitDefaultValue=false)]
-        public string ParticipantId { get; set; }
-        /// <summary>
-        /// Gets or Sets Source
-        /// </summary>
-        [DataMember(Name="source", EmitDefaultValue=false)]
-        public DSWorkflowVariableSourceTypesParticipant Source { get; set; }
         /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
@@ -92,9 +44,6 @@ namespace DocuSign.Maestro.Model
         {
             var sb = new StringBuilder();
             sb.Append("class DSWorkflowVariableFromParticipant {\n");
-            sb.Append("  Key: ").Append(Key).Append("\n");
-            sb.Append("  ParticipantId: ").Append(ParticipantId).Append("\n");
-            sb.Append("  Source: ").Append(Source).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -130,22 +79,7 @@ namespace DocuSign.Maestro.Model
             if (other == null)
                 return false;
 
-            return 
-                (
-                    this.Key == other.Key ||
-                    this.Key != null &&
-                    this.Key.Equals(other.Key)
-                ) && 
-                (
-                    this.ParticipantId == other.ParticipantId ||
-                    this.ParticipantId != null &&
-                    this.ParticipantId.Equals(other.ParticipantId)
-                ) && 
-                (
-                    this.Source == other.Source ||
-                    this.Source != null &&
-                    this.Source.Equals(other.Source)
-                );
+            return false;
         }
 
         /// <summary>
@@ -159,12 +93,6 @@ namespace DocuSign.Maestro.Model
             {
                 int hash = 41;
                 // Suitable nullity checks etc, of course :)
-                if (this.Key != null)
-                    hash = hash * 59 + this.Key.GetHashCode();
-                if (this.ParticipantId != null)
-                    hash = hash * 59 + this.ParticipantId.GetHashCode();
-                if (this.Source != null)
-                    hash = hash * 59 + this.Source.GetHashCode();
                 return hash;
             }
         }

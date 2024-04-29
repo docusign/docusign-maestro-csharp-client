@@ -65,7 +65,19 @@ namespace DocuSign.Maestro.Model
         /// Enum NotDeployed for value: Not Deployed
         /// </summary>
         [EnumMember(Value = "Not Deployed")]
-        NotDeployed = 6
+        NotDeployed = 6,
+        
+        /// <summary>
+        /// Enum UnpublishinProgress for value: Unpublish in Progress
+        /// </summary>
+        [EnumMember(Value = "Unpublish in Progress")]
+        UnpublishinProgress = 7,
+        
+        /// <summary>
+        /// Enum Unpublished for value: Unpublished
+        /// </summary>
+        [EnumMember(Value = "Unpublished")]
+        Unpublished = 8
     }
 
 }

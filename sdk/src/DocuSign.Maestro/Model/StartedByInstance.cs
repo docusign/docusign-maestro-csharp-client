@@ -55,7 +55,13 @@ namespace DocuSign.Maestro.Model
             /// Enum Participant for value: Participant
             /// </summary>
             [EnumMember(Value = "Participant")]
-            Participant = 3
+            Participant = 3,
+            
+            /// <summary>
+            /// Enum OnBehalfOf for value: OnBehalfOf
+            /// </summary>
+            [EnumMember(Value = "OnBehalfOf")]
+            OnBehalfOf = 4
         }
 
         /// <summary>

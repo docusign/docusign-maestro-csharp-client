@@ -116,22 +116,28 @@ namespace DocuSign.Maestro.Model
         _10302 = 14,
         
         /// <summary>
+        /// Enum _10401 for value: ERR_10401
+        /// </summary>
+        [EnumMember(Value = "ERR_10401")]
+        _10401 = 15,
+        
+        /// <summary>
         /// Enum _10801 for value: ERR_10801
         /// </summary>
         [EnumMember(Value = "ERR_10801")]
-        _10801 = 15,
+        _10801 = 16,
         
         /// <summary>
         /// Enum _10802 for value: ERR_10802
         /// </summary>
         [EnumMember(Value = "ERR_10802")]
-        _10802 = 16,
+        _10802 = 17,
         
         /// <summary>
         /// Enum _10999 for value: ERR_10999
         /// </summary>
         [EnumMember(Value = "ERR_10999")]
-        _10999 = 17
+        _10999 = 18
     }
 
 }

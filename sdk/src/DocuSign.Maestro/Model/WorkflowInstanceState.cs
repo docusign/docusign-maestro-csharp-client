@@ -32,22 +32,34 @@ namespace DocuSign.Maestro.Model
     {
         
         /// <summary>
+        /// Enum Created for value: Created
+        /// </summary>
+        [EnumMember(Value = "Created")]
+        Created = 1,
+        
+        /// <summary>
         /// Enum InProgress for value: In Progress
         /// </summary>
         [EnumMember(Value = "In Progress")]
-        InProgress = 1,
+        InProgress = 2,
         
         /// <summary>
         /// Enum Completed for value: Completed
         /// </summary>
         [EnumMember(Value = "Completed")]
-        Completed = 2,
+        Completed = 3,
         
         /// <summary>
         /// Enum Failed for value: Failed
         /// </summary>
         [EnumMember(Value = "Failed")]
-        Failed = 3
+        Failed = 4,
+        
+        /// <summary>
+        /// Enum Canceled for value: Canceled
+        /// </summary>
+        [EnumMember(Value = "Canceled")]
+        Canceled = 5
     }
 
 }
