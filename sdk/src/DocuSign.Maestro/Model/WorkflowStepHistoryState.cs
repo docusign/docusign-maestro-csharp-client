@@ -47,7 +47,13 @@ namespace DocuSign.Maestro.Model
         /// Enum Failed for value: Failed
         /// </summary>
         [EnumMember(Value = "Failed")]
-        Failed = 3
+        Failed = 3,
+        
+        /// <summary>
+        /// Enum Canceled for value: Canceled
+        /// </summary>
+        [EnumMember(Value = "Canceled")]
+        Canceled = 4
     }
 
 }

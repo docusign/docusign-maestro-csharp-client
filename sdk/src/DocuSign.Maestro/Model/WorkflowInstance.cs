@@ -50,7 +50,7 @@ namespace DocuSign.Maestro.Model
         /// <param name="StartDate">Track the Start time of the Workflow Instance.</param>
         /// <param name="StartedBy">StartedBy.</param>
         /// <param name="TemplateId">TemplateId (required).</param>
-        /// <param name="Users">Users (required).</param>
+        /// <param name="Users">Contains the list of Users and Steps mapping (required).</param>
         public WorkflowInstance(string AccountId = default(string), string CreatorId = default(string), string DacId = default(string), DateTime? EndDate = default(DateTime?), string InstanceName = default(string), WorkflowInstanceState? InstanceState = default(WorkflowInstanceState?), ProgressInstance Progress = default(ProgressInstance), DateTime? StartDate = default(DateTime?), StartedByInstance StartedBy = default(StartedByInstance), string TemplateId = default(string), Dictionary<string, string> Users = default(Dictionary<string, string>))
         {
             // to ensure "CreatorId" is required (not null)
@@ -155,8 +155,9 @@ namespace DocuSign.Maestro.Model
         [DataMember(Name="templateId", EmitDefaultValue=false)]
         public string TemplateId { get; set; }
         /// <summary>
-        /// Gets or Sets Users
+        /// Contains the list of Users and Steps mapping
         /// </summary>
+        /// <value>Contains the list of Users and Steps mapping</value>
         [DataMember(Name="users", EmitDefaultValue=false)]
         public Dictionary<string, string> Users { get; set; }
         /// <summary>

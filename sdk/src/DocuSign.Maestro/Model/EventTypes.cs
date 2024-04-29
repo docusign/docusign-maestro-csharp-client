@@ -32,28 +32,106 @@ namespace DocuSign.Maestro.Model
     {
         
         /// <summary>
+        /// Enum EnvelopeSent for value: envelope-sent
+        /// </summary>
+        [EnumMember(Value = "envelope-sent")]
+        EnvelopeSent = 1,
+        
+        /// <summary>
+        /// Enum EnvelopeDelivered for value: envelope-delivered
+        /// </summary>
+        [EnumMember(Value = "envelope-delivered")]
+        EnvelopeDelivered = 2,
+        
+        /// <summary>
+        /// Enum EnvelopeCompleted for value: envelope-completed
+        /// </summary>
+        [EnumMember(Value = "envelope-completed")]
+        EnvelopeCompleted = 3,
+        
+        /// <summary>
+        /// Enum EnvelopeDeclined for value: envelope-declined
+        /// </summary>
+        [EnumMember(Value = "envelope-declined")]
+        EnvelopeDeclined = 4,
+        
+        /// <summary>
+        /// Enum EnvelopeVoided for value: envelope-voided
+        /// </summary>
+        [EnumMember(Value = "envelope-voided")]
+        EnvelopeVoided = 5,
+        
+        /// <summary>
+        /// Enum EnvelopeCreated for value: envelope-created
+        /// </summary>
+        [EnumMember(Value = "envelope-created")]
+        EnvelopeCreated = 6,
+        
+        /// <summary>
+        /// Enum EnvelopeResent for value: envelope-resent
+        /// </summary>
+        [EnumMember(Value = "envelope-resent")]
+        EnvelopeResent = 7,
+        
+        /// <summary>
+        /// Enum EnvelopeCorrected for value: envelope-corrected
+        /// </summary>
+        [EnumMember(Value = "envelope-corrected")]
+        EnvelopeCorrected = 8,
+        
+        /// <summary>
+        /// Enum EnvelopePurge for value: envelope-purge
+        /// </summary>
+        [EnumMember(Value = "envelope-purge")]
+        EnvelopePurge = 9,
+        
+        /// <summary>
+        /// Enum EnvelopeDeleted for value: envelope-deleted
+        /// </summary>
+        [EnumMember(Value = "envelope-deleted")]
+        EnvelopeDeleted = 10,
+        
+        /// <summary>
+        /// Enum EnvelopeDiscard for value: envelope-discard
+        /// </summary>
+        [EnumMember(Value = "envelope-discard")]
+        EnvelopeDiscard = 11,
+        
+        /// <summary>
+        /// Enum DeliveryFailed for value: Delivery Failed
+        /// </summary>
+        [EnumMember(Value = "Delivery Failed")]
+        DeliveryFailed = 12,
+        
+        /// <summary>
+        /// Enum AuthenticationFailed for value: Authentication Failed
+        /// </summary>
+        [EnumMember(Value = "Authentication Failed")]
+        AuthenticationFailed = 13,
+        
+        /// <summary>
         /// Enum Sent for value: Sent
         /// </summary>
         [EnumMember(Value = "Sent")]
-        Sent = 1,
+        Sent = 14,
         
         /// <summary>
         /// Enum Delivered for value: Delivered
         /// </summary>
         [EnumMember(Value = "Delivered")]
-        Delivered = 2,
+        Delivered = 15,
         
         /// <summary>
         /// Enum Signed for value: Signed
         /// </summary>
         [EnumMember(Value = "Signed")]
-        Signed = 3,
+        Signed = 16,
         
         /// <summary>
         /// Enum Completed for value: Completed
         /// </summary>
         [EnumMember(Value = "Completed")]
-        Completed = 4
+        Completed = 17
     }
 
 }
