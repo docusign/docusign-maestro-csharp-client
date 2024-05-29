@@ -26,7 +26,7 @@ namespace DocuSign.Maestro.Client
         /// Version of the package.
         /// </summary>
         /// <value>Version of the package.</value>
-        public const string Version = "1.0.0-rc2";
+        public const string Version = "1.0.0-rc3";
 
         /// <summary>
         /// Identifier for ISO 8601 DateTime Format
