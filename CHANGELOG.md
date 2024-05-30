@@ -1,3 +1,8 @@
+## [v1.0.0-rc3] - Maestro API v1.0.0-1.0.4 - 2024-05-20
+### Changed
+- Updated C# SDK dependencies.
+    - BouncyCastle.Cryptography: Version bumped from 2.3.0 to 2.3.1.
+    - Microsoft.IdentityModel.JsonWebTokens: Version bumped from 7.5.1 to 7.5.2.
 ## [v1.0.0-rc2] - Maestro API v1.0.0-1.0.4 - 2024-04-22
 ### Breaking Changes
 - Updated from System.IdentityModel.Tokens.Jwt to Microsoft.IdentityModel.JsonWebTokens for token handling.
