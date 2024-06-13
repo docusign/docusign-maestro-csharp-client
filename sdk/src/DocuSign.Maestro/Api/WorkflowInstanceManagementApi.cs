@@ -297,7 +297,7 @@ namespace DocuSign.Maestro.Api
             if (instanceId == null)
                 throw new ApiException(400, "Missing required parameter 'instanceId' when calling WorkflowInstanceManagementApi->CancelWorkflowInstance");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/instances/{instanceId}/cancel";
+            var localVarPath = "/v1/accounts/{accountId}/management/instances/{instanceId}/cancel";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -380,7 +380,7 @@ namespace DocuSign.Maestro.Api
             if (instanceId == null)
                 throw new ApiException(400, "Missing required parameter 'instanceId' when calling WorkflowInstanceManagementApi->CancelWorkflowInstance");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/instances/{instanceId}/cancel";
+            var localVarPath = "/v1/accounts/{accountId}/management/instances/{instanceId}/cancel";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -464,7 +464,7 @@ namespace DocuSign.Maestro.Api
             if (instanceId == null)
                 throw new ApiException(400, "Missing required parameter 'instanceId' when calling WorkflowInstanceManagementApi->GetWorkflowHistory");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/instances/{instanceId}/history";
+            var localVarPath = "/v1/accounts/{accountId}/management/instances/{instanceId}/history";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -547,7 +547,7 @@ namespace DocuSign.Maestro.Api
             if (instanceId == null)
                 throw new ApiException(400, "Missing required parameter 'instanceId' when calling WorkflowInstanceManagementApi->GetWorkflowHistory");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/instances/{instanceId}/history";
+            var localVarPath = "/v1/accounts/{accountId}/management/instances/{instanceId}/history";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -636,7 +636,7 @@ namespace DocuSign.Maestro.Api
             if (instanceId == null)
                 throw new ApiException(400, "Missing required parameter 'instanceId' when calling WorkflowInstanceManagementApi->GetWorkflowInstance");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/instances/{instanceId}";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/instances/{instanceId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -725,7 +725,7 @@ namespace DocuSign.Maestro.Api
             if (instanceId == null)
                 throw new ApiException(400, "Missing required parameter 'instanceId' when calling WorkflowInstanceManagementApi->GetWorkflowInstance");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/instances/{instanceId}";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/instances/{instanceId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -810,7 +810,7 @@ namespace DocuSign.Maestro.Api
             if (workflowDefinitionId == null)
                 throw new ApiException(400, "Missing required parameter 'workflowDefinitionId' when calling WorkflowInstanceManagementApi->GetWorkflowInstances");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/instances";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/instances";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -893,7 +893,7 @@ namespace DocuSign.Maestro.Api
             if (workflowDefinitionId == null)
                 throw new ApiException(400, "Missing required parameter 'workflowDefinitionId' when calling WorkflowInstanceManagementApi->GetWorkflowInstances");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/instances";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/instances";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);

@@ -443,7 +443,7 @@ namespace DocuSign.Maestro.Api
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling WorkflowManagementApi->CreateWorkflowDefinition");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -533,7 +533,7 @@ namespace DocuSign.Maestro.Api
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling WorkflowManagementApi->CreateWorkflowDefinition");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -624,7 +624,7 @@ namespace DocuSign.Maestro.Api
             if (workflowDefinitionId == null)
                 throw new ApiException(400, "Missing required parameter 'workflowDefinitionId' when calling WorkflowManagementApi->DeleteWorkflowDefinition");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -707,7 +707,7 @@ namespace DocuSign.Maestro.Api
             if (workflowDefinitionId == null)
                 throw new ApiException(400, "Missing required parameter 'workflowDefinitionId' when calling WorkflowManagementApi->DeleteWorkflowDefinition");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -801,7 +801,7 @@ namespace DocuSign.Maestro.Api
             if (workflowDefinitionId == null)
                 throw new ApiException(400, "Missing required parameter 'workflowDefinitionId' when calling WorkflowManagementApi->GetWorkflowDefinition");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -890,7 +890,7 @@ namespace DocuSign.Maestro.Api
             if (workflowDefinitionId == null)
                 throw new ApiException(400, "Missing required parameter 'workflowDefinitionId' when calling WorkflowManagementApi->GetWorkflowDefinition");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -978,7 +978,7 @@ namespace DocuSign.Maestro.Api
             if (workflowDefinitionId == null)
                 throw new ApiException(400, "Missing required parameter 'workflowDefinitionId' when calling WorkflowManagementApi->GetWorkflowDefinitionConfigInstances");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/configInstances";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/config_instances";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -1061,7 +1061,7 @@ namespace DocuSign.Maestro.Api
             if (workflowDefinitionId == null)
                 throw new ApiException(400, "Missing required parameter 'workflowDefinitionId' when calling WorkflowManagementApi->GetWorkflowDefinitionConfigInstances");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/configInstances";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/config_instances";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -1150,7 +1150,7 @@ namespace DocuSign.Maestro.Api
             if (accountId == null)
                 throw new ApiException(400, "Missing required parameter 'accountId' when calling WorkflowManagementApi->GetWorkflowDefinitions");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -1233,7 +1233,7 @@ namespace DocuSign.Maestro.Api
             if (accountId == null)
                 throw new ApiException(400, "Missing required parameter 'accountId' when calling WorkflowManagementApi->GetWorkflowDefinitions");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -1325,7 +1325,7 @@ namespace DocuSign.Maestro.Api
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling WorkflowManagementApi->PublishOrUnPublishWorkflowDefinition");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/publish";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/publish";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -1421,7 +1421,7 @@ namespace DocuSign.Maestro.Api
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling WorkflowManagementApi->PublishOrUnPublishWorkflowDefinition");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/publish";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/publish";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -1518,7 +1518,7 @@ namespace DocuSign.Maestro.Api
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling WorkflowManagementApi->UpdateWorkflowDefinition");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -1614,7 +1614,7 @@ namespace DocuSign.Maestro.Api
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling WorkflowManagementApi->UpdateWorkflowDefinition");
 
-            var localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}";
+            var localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
