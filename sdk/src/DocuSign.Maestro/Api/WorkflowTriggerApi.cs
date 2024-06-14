@@ -31,10 +31,11 @@ namespace DocuSign.Maestro.Api
         /// </remarks>
         /// <exception cref="DocuSign.Maestro.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountId">Account ID</param>
+        /// <param name="workflowDefinitionId">Workflow Definition ID</param>
         /// <param name="body">JSON payload that will be passed to the triggered workflow</param>
         /// <param name="options">Options for modifying the behavior of the function.</param>
         /// <returns></returns>
-        TriggerWorkflowViaPostResponse TriggerWorkflow(string accountId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null);
+        TriggerWorkflowViaPostResponse TriggerWorkflow(string accountId, string workflowDefinitionId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null);
 
         /// <summary>
         /// Creates a new workflow instance after authenticating with DS Account Server
@@ -44,10 +45,11 @@ namespace DocuSign.Maestro.Api
         /// </remarks>
         /// <exception cref="DocuSign.Maestro.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountId">Account ID</param>
+        /// <param name="workflowDefinitionId">Workflow Definition ID</param>
         /// <param name="body">JSON payload that will be passed to the triggered workflow</param>
         /// <param name="options">Options for modifying the behavior of the function.</param>
         /// <returns>ApiResponse of </returns>
-        ApiResponse<TriggerWorkflowViaPostResponse> TriggerWorkflowWithHttpInfo(string accountId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null);
+        ApiResponse<TriggerWorkflowViaPostResponse> TriggerWorkflowWithHttpInfo(string accountId, string workflowDefinitionId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -58,10 +60,11 @@ namespace DocuSign.Maestro.Api
         /// </remarks>
         /// <exception cref="DocuSign.Maestro.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountId">Account ID</param>
+        /// <param name="workflowDefinitionId">Workflow Definition ID</param>
         /// <param name="body">JSON payload that will be passed to the triggered workflow</param>
         /// <param name="options">Options for modifying the behavior of the function.</param>
         /// <returns>Task of TriggerWorkflowViaPostResponse</returns>
-        System.Threading.Tasks.Task<TriggerWorkflowViaPostResponse> TriggerWorkflowAsync(string accountId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null);
+        System.Threading.Tasks.Task<TriggerWorkflowViaPostResponse> TriggerWorkflowAsync(string accountId, string workflowDefinitionId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null);
 
         /// <summary>
         /// Creates a new workflow instance after authenticating with DS Account Server
@@ -71,10 +74,11 @@ namespace DocuSign.Maestro.Api
         /// </remarks>
         /// <exception cref="DocuSign.Maestro.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountId">Account ID</param>
+        /// <param name="workflowDefinitionId">Workflow Definition ID</param>
         /// <param name="body">JSON payload that will be passed to the triggered workflow</param>
         /// <param name="options">Options for modifying the behavior of the function.</param>
         /// <returns>Task of ApiResponse (TriggerWorkflowViaPostResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<TriggerWorkflowViaPostResponse>> TriggerWorkflowAsyncWithHttpInfo(string accountId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null);
+        System.Threading.Tasks.Task<ApiResponse<TriggerWorkflowViaPostResponse>> TriggerWorkflowAsyncWithHttpInfo(string accountId, string workflowDefinitionId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null);
         #endregion Asynchronous Operations
     }
 
@@ -145,12 +149,13 @@ namespace DocuSign.Maestro.Api
         /// </summary>
         /// <exception cref="DocuSign.Maestro.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountId">Account ID</param>
+        /// <param name="workflowDefinitionId">Workflow Definition ID</param>
         /// <param name="body">JSON payload that will be passed to the triggered workflow</param>
         /// <param name="options">Options for modifying the behavior of the function.</param>
         /// <returns>TriggerWorkflowViaPostResponse</returns>
-        public TriggerWorkflowViaPostResponse TriggerWorkflow(string accountId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null)
+        public TriggerWorkflowViaPostResponse TriggerWorkflow(string accountId, string workflowDefinitionId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null)
         {
-             ApiResponse<TriggerWorkflowViaPostResponse> localVarResponse = TriggerWorkflowWithHttpInfo(accountId, body, options);
+             ApiResponse<TriggerWorkflowViaPostResponse> localVarResponse = TriggerWorkflowWithHttpInfo(accountId, workflowDefinitionId, body, options);
              return localVarResponse.Data;
         }
 
@@ -159,19 +164,23 @@ namespace DocuSign.Maestro.Api
         /// </summary>
         /// <exception cref="DocuSign.Maestro.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountId">Account ID</param>
+        /// <param name="workflowDefinitionId">Workflow Definition ID</param>
         /// <param name="body">JSON payload that will be passed to the triggered workflow</param>
         /// <param name="options">Options for modifying the behavior of the function.</param>
         /// <returns>ApiResponse of TriggerWorkflowViaPostResponse</returns>
-        public ApiResponse<TriggerWorkflowViaPostResponse> TriggerWorkflowWithHttpInfo(string accountId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null)
+        public ApiResponse<TriggerWorkflowViaPostResponse> TriggerWorkflowWithHttpInfo(string accountId, string workflowDefinitionId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null)
         {
             // verify the required parameter 'accountId' is set
             if (accountId == null)
                 throw new ApiException(400, "Missing required parameter 'accountId' when calling WorkflowTriggerApi->TriggerWorkflow");
+            // verify the required parameter 'workflowDefinitionId' is set
+            if (workflowDefinitionId == null)
+                throw new ApiException(400, "Missing required parameter 'workflowDefinitionId' when calling WorkflowTriggerApi->TriggerWorkflow");
             // verify the required parameter 'body' is set
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling WorkflowTriggerApi->TriggerWorkflow");
 
-            var localVarPath = "aow-auth/v1.0/accounts/{accountId}/workflows/trigger";
+            var localVarPath = "/v1/accounts/{accountId}/workflow_definitions/{workflowDefinitionId}/trigger";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -198,6 +207,7 @@ namespace DocuSign.Maestro.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (accountId != null) localVarPathParams.Add("accountId", this.ApiClient.ParameterToString(accountId)); // path parameter
+            if (workflowDefinitionId != null) localVarPathParams.Add("workflowDefinitionId", this.ApiClient.ParameterToString(workflowDefinitionId)); // path parameter
             if (options != null)
             {
                 if (options.mtid != null) localVarQueryParams.Add("mtid", this.ApiClient.ParameterToString(options.mtid)); // query parameter
@@ -242,12 +252,13 @@ namespace DocuSign.Maestro.Api
         /// </summary>
         /// <exception cref="DocuSign.Maestro.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountId">Account ID</param>
+        /// <param name="workflowDefinitionId">Workflow Definition ID</param>
         /// <param name="body">JSON payload that will be passed to the triggered workflow</param>
         /// <param name="options">Options for modifying the behavior of the function.</param>
         /// <returns>Task of TriggerWorkflowViaPostResponse</returns>
-        public async System.Threading.Tasks.Task<TriggerWorkflowViaPostResponse> TriggerWorkflowAsync(string accountId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null)
+        public async System.Threading.Tasks.Task<TriggerWorkflowViaPostResponse> TriggerWorkflowAsync(string accountId, string workflowDefinitionId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null)
         {
-             ApiResponse<TriggerWorkflowViaPostResponse> localVarResponse = await TriggerWorkflowAsyncWithHttpInfo(accountId, body, options);
+             ApiResponse<TriggerWorkflowViaPostResponse> localVarResponse = await TriggerWorkflowAsyncWithHttpInfo(accountId, workflowDefinitionId, body, options);
              return localVarResponse.Data;
         }
 
@@ -256,19 +267,23 @@ namespace DocuSign.Maestro.Api
         /// </summary>
         /// <exception cref="DocuSign.Maestro.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountId">Account ID</param>
+        /// <param name="workflowDefinitionId">Workflow Definition ID</param>
         /// <param name="body">JSON payload that will be passed to the triggered workflow</param>
         /// <param name="options">Options for modifying the behavior of the function.</param>
         /// <returns>Task of ApiResponse (TriggerWorkflowViaPostResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<TriggerWorkflowViaPostResponse>> TriggerWorkflowAsyncWithHttpInfo(string accountId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null)
+        public async System.Threading.Tasks.Task<ApiResponse<TriggerWorkflowViaPostResponse>> TriggerWorkflowAsyncWithHttpInfo(string accountId, string workflowDefinitionId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options = null)
         {
             // verify the required parameter 'accountId' is set
             if (accountId == null)
                 throw new ApiException(400, "Missing required parameter 'accountId' when calling WorkflowTriggerApi->TriggerWorkflow");
+            // verify the required parameter 'workflowDefinitionId' is set
+            if (workflowDefinitionId == null)
+                throw new ApiException(400, "Missing required parameter 'workflowDefinitionId' when calling WorkflowTriggerApi->TriggerWorkflow");
             // verify the required parameter 'body' is set
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling WorkflowTriggerApi->TriggerWorkflow");
 
-            var localVarPath = "aow-auth/v1.0/accounts/{accountId}/workflows/trigger";
+            var localVarPath = "/v1/accounts/{accountId}/workflow_definitions/{workflowDefinitionId}/trigger";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(this.ApiClient.Configuration.DefaultHeader);
@@ -295,6 +310,7 @@ namespace DocuSign.Maestro.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (accountId != null) localVarPathParams.Add("accountId", this.ApiClient.ParameterToString(accountId)); // path parameter
+            if (workflowDefinitionId != null) localVarPathParams.Add("workflowDefinitionId", this.ApiClient.ParameterToString(workflowDefinitionId)); // path parameter
             if (options != null)
             {
                 if (options.mtid != null) localVarQueryParams.Add("mtid", this.ApiClient.ParameterToString(options.mtid)); // query parameter

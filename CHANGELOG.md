@@ -1,3 +1,8 @@
+## [v1.0.0-rc4] - Maestro API v1.0.0-1.0.5 - 2024-06-07
+### Changed
+- Added support for version v1.0.0-1.0.5 of the DocuSign Maestro API.
+- Updated the SDK release version.
+
 ## [v1.0.0-rc3] - Maestro API v1.0.0-1.0.4 - 2024-05-20
 ### Changed
 - Updated C# SDK dependencies.

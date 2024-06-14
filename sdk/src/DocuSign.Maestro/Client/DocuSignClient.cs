@@ -40,7 +40,7 @@ namespace DocuSign.Maestro.Client
     {
         // Rest API base path constants
         // Live/Production base path
-        public const string Production_REST_BasePath = "https://www.docusign.net";
+        public const string Production_REST_BasePath = "https://apps.docusign.com/api/maestro";
         // Sandbox/Demo base path 
         public const string Demo_REST_BasePath = "https://demo.docusign.net/restapi";
         // Stage base path
@@ -795,10 +795,7 @@ namespace DocuSign.Maestro.Client
             }
             else
             {
-                throw new ApiException((int)response.StatusCode,
-                  "Error while requesting server, received a non successful HTTP code with response Body: " + response.Content,
-                   response.Content,
-                   response);
+                throw CreateApiExceptionFromDocuSignResponse(response);
             }
         }
 
@@ -829,10 +826,7 @@ namespace DocuSign.Maestro.Client
             }
             else
             {
-                throw new ApiException((int)response.StatusCode,
-                      "Error while requesting server, received a non successful HTTP code with response Body: " + response.Content,
-                       response.Content,
-                       response);
+                throw CreateApiExceptionFromDocuSignResponse(response);
             }
         }
 
@@ -979,10 +973,7 @@ namespace DocuSign.Maestro.Client
             }
             else
             {
-                throw new ApiException((int)response.StatusCode,
-                      "Error while requesting server, received a non successful HTTP code with response Body: " + response.Content,
-                       response.Content,
-                       response);
+                throw CreateApiExceptionFromDocuSignResponse(response);
             }
         }
 
@@ -1055,11 +1046,19 @@ namespace DocuSign.Maestro.Client
             }
             else
             {
-                throw new ApiException((int)response.StatusCode,
-                      "Error while requesting server, received a non successful HTTP code with response Body: " + response.Content,
-                       response.Content,
-                       response);
+                throw CreateApiExceptionFromDocuSignResponse(response);
             }
         }
+
+        private ApiException CreateApiExceptionFromDocuSignResponse(DocuSignResponse response)
+        {
+            var hasContent = !string.IsNullOrWhiteSpace(response.Content);
+
+            return new ApiException((int)response.StatusCode,
+                            "Error while requesting server, received a non successful HTTP code with response Body: " + (hasContent ? response.Content : response.ErrorMessage),
+                            (hasContent ? (dynamic)response.Content : response.Exception),
+                            response);
+        }
+
     }
 }
