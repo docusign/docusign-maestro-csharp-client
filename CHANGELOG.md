@@ -1,3 +1,9 @@
+## [v1.0.1] - Maestro API v1.0.0-1.0.5 - 2024-11-07
+### Changed
+- Fixed Deadlock issue with UI Apps (E.g. WinForms).
+- Fixed deserialization issue of text/csv type response
+- Removed the staging base path and OAuth path constant.
+- Updated the SDK release version.
 ## [v1.0.0] - Maestro API v1.0.0-1.0.5 - 2024-07-30
 ### Changed
 - Added support for version v1.0.0-1.0.5 of the DocuSign Maestro API.
