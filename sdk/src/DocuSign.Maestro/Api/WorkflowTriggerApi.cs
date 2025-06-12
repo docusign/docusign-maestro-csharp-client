@@ -85,6 +85,7 @@ namespace DocuSign.Maestro.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
+    [Obsolete("⚠️ Deprecated – Maestro is now available as part of the new IAM SDK: https://developers.docusign.com/docs/sdks/")]
     public partial class WorkflowTriggerApi : IWorkflowTriggerApi
     {
         private DocuSign.Maestro.Client.ExceptionFactory _exceptionFactory = (name, response) => null;

@@ -36,6 +36,7 @@ namespace DocuSign.Maestro.Client
     /// <summary>
     /// DocuSignClient is mainly responsible for facilitating HTTP calls to the Docusign APIs.
     /// </summary>
+    [Obsolete("⚠️ Deprecated – Maestro is now available as part of the new IAM SDK: https://developers.docusign.com/docs/sdks/.")]
     public class DocuSignClient
     {
         // Rest API base path constants
