@@ -4,10 +4,10 @@
     <TargetFrameworks>net462;netstandard2.0</TargetFrameworks>
     <IsPackable>true</IsPackable>
     <PackageId>DocuSign.Maestro</PackageId>
-    <Description>The Docusign NuGet package makes integrating Docusign into your apps and websites a super fast and painless process. The library is open sourced on GitHub, look for the docusign-maestro-csharp-client repository.</Description>
+    <Description>The Docusign NuGet package makes integrating Docusign into your apps and websites a super fast and painless process. The library is open sourced on GitHub, look for the docusign-maestro-csharp-client repository. This SDK is deprecated and no longer actively maintained.</Description>
     <Company>DocuSign Inc.</Company>
     <Owners>DocuSign</Owners>
-    <Copyright>Copyright © Docusign 2024</Copyright>
+    <Copyright>Copyright © Docusign 2025</Copyright>
     <AssemblyTitle>DocuSign.Maestro</AssemblyTitle>
     <Authors>DocuSign</Authors>
     <OutputType>Library</OutputType>
@@ -16,7 +16,7 @@
     <RootNamespace>DocuSign.Maestro</RootNamespace>
     <AssemblyName>DocuSign.Maestro</AssemblyName>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <VersionPrefix>1.0.2</VersionPrefix>
+    <VersionPrefix>2.0.0</VersionPrefix>
     <VersionSuffix/>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -26,7 +26,7 @@
     <PackageLicenseUrl>https://github.com/docusign/docusign-maestro-csharp-client/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/docusign/docusign-maestro-csharp-client</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>[v1.0.2] - Maestro API v1.0.0-1.0.5 - 11/15/2024</PackageReleaseNotes>
+    <PackageReleaseNotes>⚠️ Deprecated – Maestro is now available as part of the new IAM SDK: https://developers.docusign.com/docs/sdks/</PackageReleaseNotes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'net462'">
     <DefineConstants>NET462</DefineConstants>

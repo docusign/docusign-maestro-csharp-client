@@ -1,3 +1,6 @@
+## [v2.0.0] - Maestro API v1.0.0-1.0.5 - 2025-05-21
+⚠️ Deprecated – Maestro is now available as part of the new IAM SDK: https://developers.docusign.com/docs/sdks/
+
 ## [v1.0.2] - Maestro API v1.0.0-1.0.5 - 2024-11-15
 ### Changed
 - Resolved an issue that prevented the use of `RequestJWTApplicationToken` with a production account URL.

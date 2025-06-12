@@ -1,7 +1,18 @@
-# The Official Docusign Maestro C# Client SDK
+
+## ⚠️ Deprecation Notice
+This SDK is deprecated and no longer actively maintained.
+
+Docusign has launched a new IAM SDK, which includes support for Maestro, Navigator and Connected Fields API families in a single, unified package.
+
+👉 We recommend migrating to the IAM SDK for the latest updates, support, and a streamlined developer experience.
+
+🔗 [Learn more and get started](https://developers.docusign.com/docs/sdks/) 
+
+# The Official Docusign Maestro C# Client SDK (Deprecated)
 
 [![Nuget version][nuget-image]][nuget-url]
 [![Nuget downloads][downloads-image]][downloads-url]
+![Deprecated](https://img.shields.io/badge/status-deprecated-red.svg)
 
 The Docusign SDK makes integrating Docusign into your apps and websites a seamless experience.
 
@@ -33,7 +44,7 @@ This client SDK is provided as open source, which enables you to customize its f
 <a id="versionInformation"></a>
 ### Version Information
 - **API version**: 1.0.0
-- **Latest SDK version (Including prerelease)**: 1.0.2
+- **Latest SDK version (Including prerelease)**: 2.0.0
 
 <a id="requirements"></a>
 ### Requirements
